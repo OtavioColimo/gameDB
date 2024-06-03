@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goku Vs Goku Black</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+</head>
+<body>
+    
+<div id="app">
+    <div class="container">
+        <div class="personagem">
+            <h1>Goku</h1>
+            <div class="sprite_heroi"><img src="/img/heroi.png" alt="heroi"></div>
+            <br>
+            <div :class="['barra-vida', { 'baixa-vida': heroi.vida <= 30, 'media-vida': heroi.vida > 30 && heroi.vida <= 70, 'alta-vida': heroi.vida > 70 }]" :style="{width: heroi.vida + '%'}">{{ heroi.vida }}</div>
+            
+            <p :class="{ 'critico': true,  'critico_zerado': heroi.critico <= 0 }">Critico {{ heroi.critico }}</p>
+            <p :class="{ 'escudo': true,  'escudo_zerado': heroi.defender <= 0 }">Escudo {{ heroi.defender }}
+            <p :class="{ 'escudo': true, 'defesa_inativa': heroi.escudo === false, 'defesa_ativa': heroi.escudo === true }">Escudo {{ heroi.escudo ? 'Ativo' : 'Inativo' }}</p>
+            <p :class="{ 'pocao': true,  'pocao': heroi.pocao <= 0 }">Cura {{ heroi.pocao }}</p>
+            
+        </div>
+
+        <div class="personagem">
+            <h1 class="historico"></h1>
+            <p v-for="(mensagem, index) in log" :key="index" class="mensagem">{{ mensagem }}</p>
+        </div>
+
+        <div class="personagem" >
+            <h1>Goku Black</h1>
+            <div class="sprite_vilao"><img src="/img/vilao.png" alt="vilao"></div>
+            <div :class="['barra-vida', { 'baixa-vida': vilao.vida <= 30, 'media-vida': vilao.vida > 30 && vilao.vida <= 70, 'alta-vida': vilao.vida > 70 }]" :style="{width: vilao.vida + '%'}">{{ vilao.vida }}</div>
+            <br>
+            <button @click="resetGame()" :class="{ 'botao_invisivel': mostrarBotao, 'botao_visivel': !mostrarBotao }">Reiniciar Jogo</button>
+            <br>
+        </div>
+    </div>
+    <button onclick="window.open('dashboard.html','_blank')">Dashboard</button>
+
+    <div class="acoes"> 
+        <button @click="atacar(true)">Atacar</button>
+        <button @click="defender(true)">Defender</button>
+        <button @click="usarPocao(true)">Curar</button>
+        <button @click="critico(true)">Critico</button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
+
+

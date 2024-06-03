@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style_login.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="buttons-container">
+            <button @click="login">Login</button>
+            <button @click="cadastro">Cadastro</button>
+        </div>
+    
+        <transition name="fade" mode="out-in">
+            <component :is="componenteAtual"></component>
+        </transition>
+    </div>
+</div>
+</body>
+</html>
+<script src="script_login.js"></script>

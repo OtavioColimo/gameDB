@@ -1,0 +1,36 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    font-family: Arial, sans-serif; 
+}
+
+#app {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.personagem {
+    background-color: #333333; 
+    border: 2px solid #d6d6d6; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.personagens {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #d6d6d6;
+}

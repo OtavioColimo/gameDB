@@ -1,0 +1,20 @@
+{
+  "name": "jogovue",
+  "version": "1.0.0",
+  "description": "Jogo realizado utilizando as tecnologias JavaScript + Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mssql": "^10.0.2",
+    "vue": "^3.4.27"
+  }
+}

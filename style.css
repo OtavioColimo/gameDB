@@ -1,0 +1,143 @@
+body, html {
+    background-image: url('/img/background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d2dde0; 
+    font-family: Arial, sans-serif; 
+}
+
+#app {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.personagem {
+    background-color: #0d33ca; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+.acoes {
+    display: grid;
+    grid-template-columns: repeat(2, .4fr);
+    gap: 3px; 
+    justify-content: center;
+    padding-top: 15px;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    background-color: #072083; 
+    color: #d2dde0;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+.barra-vida {
+    height: 28px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.baixa-vida {
+    background-color: red;
+}
+
+.media-vida {
+    background-color: yellow; 
+    color: #424040;
+}
+
+.alta-vida {
+    background-color: green; 
+}
+
+.sprite {
+    height: 160px;
+    background-color: #333333; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+}
+
+.sprite_heroi img {
+    width: 85%;
+    height: auto;
+}
+
+.sprite_vilao img {
+    width: 100%;
+    height: auto;
+}
+
+
+.mensagem {
+    color: #f8f8f8;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.historico{
+    color:  #072083;;
+}
+
+
+
+.critico_zerado{
+    color: red;
+}
+
+.escudo_zerado{
+    color: red;
+
+}
+.pocao{
+    color: red;
+
+}
+
+.defesa_inativa{
+    color: red;
+}
+
+.defesa_ativa{
+    color: green
+}
+
+.botao_invisivel{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.botao_visivel {
+   
+    display: none;
+  
+}
