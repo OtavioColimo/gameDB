@@ -2,7 +2,7 @@
 
 Goku e Goku Black se enfrentam até que a vida do adversário se esgote, monte estrategias utilizando curas e escudos.
 
-Clique aqui para acessar o jogo: <a href="https://delightful-moonbeam-5cb7c9.netlify.app/"></a>
+Clique aqui para acessar o jogo: <a href="https://delightful-moonbeam-5cb7c9.netlify.app/">Play Game!</a>
 
 ##
 
